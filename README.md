@@ -10,13 +10,28 @@
 ## About Project
 
 ### How To Run Project
+1. Run composer install
+    ```
+    composer install
+    ```
+2. Copy `.env.example` to `.env`
+3. Create `database` dengan nama `ecommerce`
+4. Edit `.env` sesuaikan dengan setting database di local anda.
+5. Run migration
+    ```
+    php artisan migrate
+     ```
+6. Run DB seeder
+    ```
+    php artisan db:seed
+    ```
+7. Run artisan serve
+    ```
+    php artisan serve
+    ```
 
-1. Copy `.env.example` to `.env`
+Thank you!
 
-2. Run composer install
-    `
-        composer install
-    `
 
 
 
