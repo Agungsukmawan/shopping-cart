@@ -42,7 +42,7 @@
             </tr>
         </tbody>
       </table>
-      <a href="" class="btn btn-primary">Checkout</a>
+      <a href="/transaction/checkout" class="btn btn-primary">Checkout</a>
     </div>
 </div>
 

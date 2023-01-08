@@ -16,7 +16,11 @@ use App\Http\Controllers\TransactionController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/transaction', [TransactionController::class, 'index']);
+
+Route::prefix('transaction')->group(function () {
+    Route::get('/', [TransactionController::class, 'index']);
+    Route::get('/checkout', [TransactionController::class, 'checkout']);
+});
 
 Route::prefix('cart')->group(function () {
     Route::get('/', [CartController::class, 'index']);
